@@ -33,7 +33,7 @@ def main():
             if scores.has_key(encoded_word):
                sentiment += float(scores[word])
                #print "went in"
-               print "%.2f" % sentiment 
+         print "%.2f" % sentiment 
 
 
 if __name__ == '__main__':
