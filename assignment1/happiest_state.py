@@ -25,8 +25,9 @@ def main():
       #print tweet     
       
       #if tweet.has_key("text"): 
-      if tweet.has_key("place") and tweet.has_key("lang") and tweet.has_key("text"): 
-         if tweet["lang"] == "en" and tweet["place"] is not None :
+      if tweet.has_key("place") and tweet.has_key("text"): 
+         #if tweet["lang"] == "en" and tweet["place"] is not None :
+         if tweet["place"] is not None : 
             #print tweet["lang"], tweet["place"], tweet["user"]
             #print tweet["user"]["location"]
             #print tweet["place"]
@@ -49,7 +50,11 @@ def main():
                     
    sorted_states = sorted(states, key=states.get, reverse=True)
    # sort the dict by values
+   #print sorted_states
+   #for k in range(1):
    print sorted_states[0]
+   
+
 
 if __name__ == '__main__':
     main()
